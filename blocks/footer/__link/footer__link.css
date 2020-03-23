@@ -1,0 +1,33 @@
+.footer__link {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 2.5625rem;
+  margin: 0 0 0 18px;
+}
+.footer__link:first-of-type {
+  margin: 0;
+}
+.footer__link:hover {
+  color: #868383;
+}
+@media (max-width: 770px) {
+  .footer__link {
+    font-size: 1rem;
+    line-height: 1.6875rem;
+  }
+}
+@media (max-width: 440px) {
+  .footer__link {
+    margin: 32px 0 0 0;
+    font-size: 1.5rem;
+    line-height: 2.5625rem;
+  }
+}
+.footer__link:first-of-type {
+  margin: 0;
+}

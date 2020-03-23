@@ -1,0 +1,24 @@
+.video__item-title {
+  max-width: 322px;
+  min-height: 73px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2.25rem;
+  line-height: 2.4375rem;
+  margin: 12px auto 0 30px;
+  z-index: 2;
+}
+@media (max-width: 768px) {
+  .video__item-title {
+    margin: 8px auto 0 24px;
+    font-size: 1.5rem;
+    line-height: 1.625rem;
+    min-height: auto;
+  }
+}
+@media (max-width: 320px) {
+  .video__item-title {
+    margin: 8px auto 0 16px;
+  }
+}

@@ -1,0 +1,9 @@
+.header__lang_ru {
+  margin: 17px 0 12px;
+  text-decoration-line: underline;
+}
+@media (max-width: 365px) {
+  .header__lang_ru {
+    margin: 17px 0 7px;
+  }
+}

@@ -1,0 +1,19 @@
+.intro__text {
+  list-style-type: none;
+  padding: 0;
+  margin: 24px 0 0;
+  max-width: 383px;
+  min-height: 93px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.8rem;
+  line-height: 1.25rem;
+}
+@media (max-width: 375px) {
+  .intro__text {
+    margin: 32px 0 0;
+    font-size: 0.75rem;
+    line-height: 1.1875rem;
+  }
+}

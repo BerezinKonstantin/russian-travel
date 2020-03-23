@@ -1,0 +1,23 @@
+@import url(./_en/header__lang_en.css);
+@import url(./_ru/header__lang_ru.css);
+.header__lang {
+  display: flex;
+  width: 30px;
+  height: 23px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 23px;
+  text-align: center;
+  color: white;
+}
+.header__lang:hover {
+  color: #868383
+}
+@media (max-width: 365px) {
+  .header__lang {
+    font-size: 18px;
+    line-height: 17px;
+  }
+}

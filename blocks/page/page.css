@@ -1,0 +1,10 @@
+.page {
+  background-color: #2a2c2f;
+  margin: 0 auto;
+  padding-top: 30px;
+  font-size: 16px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: white;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
