@@ -6,7 +6,6 @@
   align-items: center;
   margin: 102px auto 0;
   max-width: 1184px;
-  min-height: 618px;
 }
 @media (max-width: 1137px) {
   .comments {

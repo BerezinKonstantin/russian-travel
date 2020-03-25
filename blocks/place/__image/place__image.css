@@ -4,10 +4,9 @@
   max-width: 47%;
   margin: 0 4% 0 0;
 }
-@media (max-width: 375px) {
+@media (max-width: 719px) {
   .place__image {
     max-width: 100%;
-    height: auto;
-    margin: 0 0 24px;
+    margin: 0 auto 24px;
   }
 }

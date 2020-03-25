@@ -1,9 +1,0 @@
-.header__lang_en {
-  margin:17px 0 12px 18px;
-  text-decoration-line: none;
-}
-@media (max-width: 365px) {
-  .header__lang_en {
-    margin: 17px 0 7px;
-  }
-}

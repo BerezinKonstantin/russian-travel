@@ -11,23 +11,17 @@
   justify-content: space-between;
   flex-wrap: wrap;
   max-width: 100%;
-  min-height: 653px;
   margin: 72px auto 0;
 }
 .place:first-of-type {
   margin: 0 auto;
-}
-@media (max-width: 1024px) {
-  .place {
-    min-height: 62.4vw;
-  }
 }
 @media (max-width: 768px) {
   .place {
     margin: 81px auto 0;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 719px) {
   .place {
     flex-direction: column;
     margin: 48px auto 0;

@@ -1,23 +1,23 @@
-@import url(./_en/header__lang_en.css);
-@import url(./_ru/header__lang_ru.css);
 .header__lang {
   display: flex;
-  width: 30px;
-  height: 23px;
-  font-family: Inter;
+  max-width: 30px;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 23px;
   text-align: center;
-  color: white;
+  margin: 17px 0 12px;
 }
-.header__lang:hover {
-  color: #868383
+.header__lang:nth-of-type(2) {
+  margin: 17px 0 12px 18px;
 }
-@media (max-width: 365px) {
+@media (max-width: 375px) {
   .header__lang {
     font-size: 18px;
     line-height: 17px;
+    margin: 17px 0 7px;
+  }
+  .header__lang:nth-of-type(2) {
+    margin: 17px 0 7px 16px;
   }
 }

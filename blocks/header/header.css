@@ -1,17 +1,16 @@
 @import url(./__logo/header__logo.css);
 @import url(./__langs/header__langs.css);
 @import url(./__lang/header__lang.css);
+@import url(./__lang/header__lang_active.css);
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
   max-width: 1184px;
-  min-height: 52px;
 }
 @media (max-width: 1315px) {
   .header {
     max-width: 90%;
   }
 }
-

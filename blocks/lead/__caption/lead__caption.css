@@ -1,32 +1,23 @@
 .lead__caption {
-  margin: 16px 0 0;
+  display: flex;
+  margin: 16px auto 0;
   align-self: flex-start;
-  max-width: 636px;
-  min-height: 10px;
-  font-family: Inter;
+  max-width: 100%;
   font-style: normal;
   font-weight: normal;
   font-size: 10px;
   line-height: 12px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
+  text-align: center;
 }
 @media (max-width: 775px) {
   .lead__caption {
-    margin: 16px 0 0 24px;
+    max-width: 90vw;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 376px) {
   .lead__caption {
-    margin: 16px 0 0;
-    align-self: center;
-    min-width: 343px;
-  }
-}
-@media (max-width: 320px) {
-  .lead__caption {
-    margin: 16px 0 0;
-    align-self: center;
-    min-width: 288px;
+    margin: 8px auto 0;
   }
 }

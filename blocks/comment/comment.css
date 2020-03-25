@@ -7,13 +7,11 @@
   justify-content: flex-start;
   align-items: start;
   max-width: calc((100% - 38px) / 3);
-  min-height: 283px;
   margin: 72px 0 0;
 }
 @media (max-width: 770px) {
   .comment {
     max-width: 382px;
-    min-height: auto;
     align-items: center;
   }
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Путешествия по России</title>
+    <link rel="stylesheet" href="vendor/normalize.css" />
     <link rel="stylesheet" href="pages/index.css" />
   </head>
   <body>
@@ -11,12 +12,12 @@
       <header class="header">
         <img
           class="header__logo"
-          src="blocks/header/__logo/header__logo.svg"
+          src="pictures/header/__logo/header__logo.svg"
           alt="Схематичная карта России"
         />
         <nav class="header__langs">
-          <a class="header__lang header__lang_ru" href="#">Ru</a>
-          <a class="header__lang header__lang_en" href="#">En</a>
+          <a class="header__lang header__lang_active link" href="#">Ru</a>
+          <a class="header__lang link" href="#">En</a>
         </nav>
       </header>
       <main class="content">
@@ -25,12 +26,14 @@
           <p class="lead__subtitle">
             Настоящая страна не в выпусках новостей, а здесь.
           </p>
-          <img
-            class="lead__image"
-            src="blocks/lead/__image/lead__image.png"
-            alt="Женщина спит на боковой полке плацкарта"
-          />
-          <p class="lead__caption">Ваша полка - верхняя</p>
+          <figure class="lead__figure">
+            <img
+              class="lead__image"
+              src="pictures/lead/__image/lead__image.jpg"
+              alt="Женщина спит на боковой полке плацкарта"
+            />
+            <figcaption class="lead__caption">Ваша полка - верхняя</figcaption>
+          </figure>
         </section>
         <section class="intro">
           <h2 class="intro__title">Чего мы там не видели?</h2>
@@ -47,72 +50,80 @@
             вашего отпуска.
           </p>
           <ul class="intro__text">
-            <li>Часовых поясов 11</li>
-            <li>Объектов природного наследия ЮНЕСКО 12</li>
-            <li>Объектов культурного наследия ЮНЕСКО 16</li>
-            <li>Природных заповедников 105</li>
-            <li>Аэропортов 241</li>
+            <li>Часовых поясов <span class="intro__text-span">11</span></li>
+            <li>
+              Объектов природного наследия ЮНЕСКО
+              <span class="intro__text-span">12</span>
+            </li>
+            <li>
+              Объектов культурного наследия ЮНЕСКО
+              <span class="intro__text-span">16</span>
+            </li>
+            <li>
+              Природных заповедников <span class="intro__text-span">105</span>
+            </li>
+            <li>Аэропортов <span class="intro__text-span">241</span></li>
           </ul>
         </section>
         <section class="photo-grid">
           <img
             class="photo-grid__item"
-            src="blocks/photo-grid/__item/train.jpg"
+            src="pictures/photo-grid/__item/train.jpg"
             alt="Вид из окна поезда"
           />
           <img
             class="photo-grid__item"
-            src="blocks/photo-grid/__item/atharva-tulsi-472908-unsplash.jpg"
+            src="pictures/photo-grid/__item/atharva-tulsi-472908-unsplash.jpg"
             alt="Горы в облаках"
           />
           <img
             class="photo-grid__item"
-            src="blocks/photo-grid/__item/tuman.jpg"
+            src="pictures/photo-grid/__item/tuman.jpg"
             alt="Рассвет в поле"
           />
           <img
             class="photo-grid__item"
-            src="blocks/photo-grid/__item/sochi.jpg"
+            src="pictures/photo-grid/__item/sochi.jpg"
             alt="Сосны в тумане"
           />
           <img
             class="photo-grid__item"
-            src="blocks/photo-grid/__item/arisa-chattasa-559627-unsplash.jpg"
+            src="pictures/photo-grid/__item/arisa-chattasa-559627-unsplash.jpg"
             alt="Колесо автомобиля на льду"
           />
           <img
             class="photo-grid__item"
-            src="blocks/photo-grid/__item/baikal.jpg"
+            src="pictures/photo-grid/__item/baikal.jpg"
             alt="Берег озера Байкал"
           />
           <img
             class="photo-grid__item"
-            src="blocks/photo-grid/__item/elbrus.jpg"
+            src="pictures/photo-grid/__item/elbrus.jpg"
             alt="Ельбрус"
           />
           <img
             class="photo-grid__item"
-            src="blocks/photo-grid/__item/stanislav-kondratiev-459423-unsplash.jpg"
+            src="pictures/photo-grid/__item/stanislav-kondratiev-459423-unsplash.jpg"
             alt="Дорожный знак - пешеходный переход"
           />
           <img
             class="photo-grid__item"
-            src="blocks/photo-grid/__item/kamchatka.jpg"
+            src="pictures/photo-grid/__item/kamchatka.jpg"
             alt="Туманные сопки"
           />
           <img
             class="photo-grid__item"
-            src="blocks/photo-grid/__item/kamchatka2.jpg"
+            src="pictures/photo-grid/__item/kamchatka2.jpg"
             alt="Вид с поля на гору"
           />
           <img
             class="photo-grid__item"
-            src="blocks/photo-grid/__item/baikal2.jpg"
+            src="pictures/photo-grid/__item/baikal2.jpg"
             alt="Горы на берегу"
           />
           <img
             class="photo-grid__item"
-            src="blocks/photo-grid/__item/ergaki.jpg"
+            src="pictures/photo-grid/__item/ergaki.jpg"
             alt="Туманные горы"
           />
         </section>
@@ -120,16 +131,16 @@
           <div class="place">
             <h2 class="place__title">Куршская коса</h2>
             <a
-              class="place__website"
+              class="place__website link"
               href="http://park-kosa.ru/"
               target="_blank"
             >
-              <p class="place__url-heading">URL</p>
+              <p class="place__url-heading">url</p>
               <p class="place__url">park-kosa.ru</p>
             </a>
             <img
               class="place__image"
-              src="blocks/place/__image/nikita-tikhomirov-1153188-unsplash.png"
+              src="pictures/place/__image/nikita-tikhomirov-1153188-unsplash.jpg"
               alt="Каменистая отмель"
             />
             <div class="place__paragraphs-container">
@@ -152,16 +163,16 @@
           <div class="place">
             <h2 class="place__title">Кольский</h2>
             <a
-              class="place__website"
+              class="place__website link"
               href="https://www.nationalgeographic.com/yourshot/?keywords=kolskiy"
               target="_blank"
             >
-              <p class="place__url-heading">URL</p>
+              <p class="place__url-heading">url</p>
               <p class="place__url">National Geographic</p>
             </a>
             <img
               class="place__image"
-              src="blocks/place/__image/m-r-760504-unsplash.png"
+              src="pictures/place/__image/m-r-760504-unsplash.jpg"
               alt="Заснеженные горы"
             />
             <div class="place__paragraphs-container">
@@ -184,16 +195,16 @@
           <div class="place">
             <h2 class="place__title">Алтай</h2>
             <a
-              class="place__website"
+              class="place__website link"
               href="https://www.facebook.com/vera.bashmakova/posts/10156011613718822"
               target="_blank"
             >
-              <p class="place__url-heading">URL</p>
+              <p class="place__url-heading">url</p>
               <p class="place__url">Facebook</p>
             </a>
             <img
               class="place__image"
-              src="blocks/place/__image/nail-gilfanov-527808-unsplash.png"
+              src="pictures/place/__image/nail-gilfanov-527808-unsplash.jpg"
               alt="Лес, вид из окна"
             />
             <div class="place__paragraphs-container">
@@ -216,16 +227,16 @@
           <div class="place">
             <h2 class="place__title">Зимний Байкал</h2>
             <a
-              class="place__website"
+              class="place__website link"
               href="https://vk.com/baikalmile"
               target="_blank"
             >
-              <p class="place__url-heading">URL</p>
+              <p class="place__url-heading">url</p>
               <p class="place__url">https://vk.com/baikalmile</p>
             </a>
             <img
               class="place__image"
-              src="blocks/place/__image/sergey-pesterev-1156037-unsplash.png"
+              src="pictures/place/__image/sergey-pesterev-1156037-unsplash.jpg"
               alt="Прозрачный толстый лёд в трещинах"
             />
             <div class="place__paragraphs-container">
@@ -247,16 +258,16 @@
           <div class="place">
             <h2 class="place__title">Карелия</h2>
             <a
-              class="place__website"
+              class="place__website link"
               href="http://vodlozero.ru/"
               target="_blank"
             >
-              <p class="place__url-heading">URL</p>
+              <p class="place__url-heading">url</p>
               <p class="place__url">http://vodlozero.ru/</p>
             </a>
             <img
               class="place__image"
-              src="blocks/place/__image/vladimir-fedotov-652306-unsplash.png"
+              src="pictures/place/__image/vladimir-fedotov-652306-unsplash.jpg"
               alt="Озеро в лесу"
             />
             <div class="place__paragraphs-container">
@@ -286,52 +297,28 @@
               href="https://vimeo.com/81106671"
               target="_blank"
             >
-              <svg
-                class="video__icon_play"
-                width="41"
-                height="41"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M20.5 1.538c10.455 0 18.962 8.507 18.962 18.962S30.956 39.462 20.5 39.462 1.538 30.956 1.538 20.5 10.045 1.538 20.5 1.538zM20.5 0C9.174 0 0 9.174 0 20.5S9.174 41 20.5 41 41 31.826 41 20.5 31.826 0 20.5 0z"
-                  fill="#fff"
-                />
-                <path
-                  d="M17.783 27.009l9.738-5.638c.307-.205.512-.512.512-.871s-.205-.718-.512-.871l-9.738-5.638a.931.931 0 00-1.025 0c-.307.205-.512.513-.512.871v11.275c0 .36.205.718.512.872.308.153.666.205 1.025 0z"
-                  fill="#fff"
-                />
-              </svg>
+              <img
+                class="video__icon"
+                src="pictures/video/__icon/__icon_play.svg"
+                alt="Кнопка воспроизведения"
+              />
               <p class="video__duration">6:30</p>
               <h3 class="video__item-title">Colors of Kamchatka</h3>
               <p class="video__item-subtitle">Director: Pavel Karykhalin</p>
-              <div class="overlay"></div>
             </a>
             <a
               class="video__item video__item_bg_observatory"
               href="https://vimeo.com/290675450"
               target="_blank"
             >
-              <svg
-                class="video__icon_play"
-                width="41"
-                height="41"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M20.5 1.538c10.455 0 18.962 8.507 18.962 18.962S30.956 39.462 20.5 39.462 1.538 30.956 1.538 20.5 10.045 1.538 20.5 1.538zM20.5 0C9.174 0 0 9.174 0 20.5S9.174 41 20.5 41 41 31.826 41 20.5 31.826 0 20.5 0z"
-                  fill="#fff"
-                />
-                <path
-                  d="M17.783 27.009l9.738-5.638c.307-.205.512-.512.512-.871s-.205-.718-.512-.871l-9.738-5.638a.931.931 0 00-1.025 0c-.307.205-.512.513-.512.871v11.275c0 .36.205.718.512.872.308.153.666.205 1.025 0z"
-                  fill="#fff"
-                />
-              </svg>
+              <img
+                class="video__icon"
+                src="pictures/video/__icon/__icon_play.svg"
+                alt="Кнопка воспроизведения"
+              />
               <p class="video__duration">24:45</p>
               <h3 class="video__item-title">Обсерватория | Observatory</h3>
               <p class="video__item-subtitle">Director: Alexander Khudokon</p>
-              <div class="overlay"></div>
             </a>
           </div>
         </section>
@@ -345,59 +332,99 @@
             <div class="comment">
               <img
                 class="comment__image"
-                src="blocks/comment/__image/portrait_1.png"
+                src="pictures/comment/__image/portrait1.jpg"
                 alt="Виктор Лягушкин"
               />
-              <p class="comment__quote">
+              <blockquote class="comment__quote">
                 «Если вам кажется, что в России ничего не происходит, то просто
                 выгляньте “наружу”…»
-              </p>
+              </blockquote>
               <p class="comment__author">Виктор Лягушкин</p>
             </div>
             <div class="comment">
               <img
                 class="comment__image"
-                src="blocks/comment/__image/portrait_2.png"
+                src="pictures/comment/__image/portrait2.jpg"
                 alt="Иван Хафизов"
               />
-              <p class="comment__quote">
+              <blockquote class="comment__quote">
                 «Если в город едут туристы — неважно за чем они туда едут: за
                 шамбалой или фрески Рублева искать, или на родину Тарковского —
                 туристы обеспечивают любой город молодёжью, рабочими местами и в
                 конечном счёте наполняют его жизнью.»
-              </p>
+              </blockquote>
               <p class="comment__author">Иван Хафизов</p>
             </div>
             <div class="comment">
               <img
                 class="comment__image"
-                src="blocks/comment/__image/portrait_3.png"
+                src="pictures/comment/__image/portrait3.jpg"
                 alt="Сергей Максимишин"
               />
-              <p class="comment__quote">
+              <blockquote class="comment__quote">
                 «Ты приезжаешь, и люди рассказывают тебе, как им плохо. А когда
                 ты покажешь, как им плохо, то ты сволочь и всё очернил.»
-              </p>
+              </blockquote>
               <p class="comment__author">Сергей Максимишин</p>
             </div>
           </div>
         </section>
-        <section class="cover">
+        <a
+          class="cover "
+          href="https://stampsy.com/na-elektrichkakh-do-baikala"
+          target="_blank"
+        >
           <h3 class="cover__title">До Байкала «на собаках»</h3>
           <p class="cover__subtitle">
             По мотивам учебной темы о Транссибе и iframes — путешествие от
             столицы до Байкала на электричках.
           </p>
-          <div class="overlay"></div>
-        </section>
+        </a>
       </main>
       <footer class="footer">
         <nav class="footer__links">
-          <a class="footer__link" href="#" target="_blank">Карты</a>
-          <a class="footer__link" href="#" target="_blank">Погода</a>
-          <a class="footer__link" href="#" target="_blank">Расписание</a>
-          <a class="footer__link" href="#" target="_blank">Календарь</a>
-          <a class="footer__link" href="#" target="_blank">Путешествия</a>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a
+                class="footer__link link"
+                href="https://yandex.ru/maps"
+                target="_blank"
+                >Карты</a
+              >
+            </li>
+            <li class="footer__item">
+              <a
+                class="footer__link link"
+                href="https://yandex.ru/pogoda"
+                target="_blank"
+                >Погода</a
+              >
+            </li>
+            <li class="footer__item">
+              <a
+                class="footer__link link"
+                href="https://rasp.yandex.ru/"
+                target="_blank"
+                >Расписание</a
+              >
+            </li>
+            <li class="footer__item">
+              <a
+                class="footer__link link"
+                href="https://calendar.yandex.ru/"
+                target="_blank"
+                >Календарь</a
+              >
+            </li>
+            <li class="footer__item">
+              <a
+                class="footer__link link"
+                href="https://travel.yandex.ru"
+                target="_blank"
+                >Путешествия</a
+              >
+            </li>
+          </ul>
         </nav>
         <p class="footer__copyright">&copy; 2020. Березин Константин</p>
       </footer>

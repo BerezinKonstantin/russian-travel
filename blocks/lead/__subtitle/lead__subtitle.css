@@ -1,8 +1,6 @@
 .lead__subtitle {
   margin: 48px auto 0;
   max-width: 583px;
-  min-height: 65px;
-  font-family: Inter;
   font-style: normal;
   font-weight: normal;
   font-size: 1.875rem;
@@ -14,7 +12,6 @@
     margin: 8px auto 0;
     font-size: 1rem;
     line-height: 1.4rem;
-    min-height: 48px;
     max-width: 288px;
   }
 }

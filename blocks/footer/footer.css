@@ -1,6 +1,8 @@
 @import url(./__copyright/footer__copyright.css);
 @import url(./__link/footer__link.css);
 @import url(./__links/footer__links.css);
+@import url(./__list/footer__list.css);
+@import url(./__item/footer__item.css);
 .footer {
   display: flex;
   flex-direction: row;
@@ -21,7 +23,7 @@
     padding-bottom: 24px;
   }
 }
-@media (max-width: 440px) {
+@media (max-width: 720px) {
   .footer {
     max-width: 90vw;
     margin: 64px auto 0;
