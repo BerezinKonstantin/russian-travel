@@ -9,7 +9,7 @@
 }
 @media (max-width: 765px) {
   .lead__subtitle {
-    margin: 8px auto 0;
+    margin: 15px auto 0;
     font-size: 1rem;
     line-height: 1.4rem;
     max-width: 288px;
