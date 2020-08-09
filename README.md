@@ -16,3 +16,5 @@
 - Grid
 
 Код проекта и файловая система оформлены в соответствии с методологией **БЭМ** по **Nested**-схеме
+
+Ссылка на проект на **[GitHub Pages](https://berezinkonstantin.github.io/russian-travel/)**
