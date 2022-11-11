@@ -7,7 +7,7 @@
   line-height: 5.8rem;
   text-align: center;
 }
-@media (min-width: 381px) and (max-width: 765px) {
+@media (min-width: 381px) and (max-width: 768px) {
   .lead__title {
     font-size: 10vw;
     line-height: 11.75vw;
@@ -19,5 +19,12 @@
     font-size: 2.5rem;
     line-height: 2.75rem;
     max-width: 343px;
+  }
+}
+@media (max-width: 320px) {
+  .lead__title {
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+    max-width: 320px;
   }
 }
